@@ -2,7 +2,7 @@
 print("Hello World.")
 
 '''笔记
-1，
+Github and Git
 '''
 
 # Arithmetic Operators                                                                                                   #Arithmetic Operators
