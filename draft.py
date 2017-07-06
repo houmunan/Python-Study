@@ -109,6 +109,17 @@ XOR: Exclusive Or, 对比于普通OR（Inclusive OR）：
 以上。
 '''
 
+print('Num4 right shift by 2 = ', num4>>2)
+print('Num5 left shift by 2 =', num5<<2)
+print('426 right shift by 4 = ', 426>>4, '始终等于', '426 / 2 ** 4', 426/2**4, '去掉小数点后的位数')
+print('6 left shift by 3 =', 6<<3, '始终等于', '6 * 2 **3 =', 6*2**3)
+
+'''Left Shift (<<<) and Right Shift(>>>)
+是把被操作的十进制数字的二进制形式往左右移动几个bit。左移就是往右添0，右移就是直接划掉右侧几位。
+注意到有趣的点，如上面的“始终等于”所述：
+     二进制位数的左移x位，等于在二进制数右侧加上x个0，等于这个数的10进制形式乘以2的x次方；
+     而右移等于这个数的10进制形式除以2的x次方取整，因为右移基本会抹掉最右边的几个1。
+以上'''
 
 
 # Identity Operator                                                                                                      #Identity Operator
