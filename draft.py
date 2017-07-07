@@ -1,27 +1,10 @@
-# 07/03/2017 Python 001                                                                                                  #07/03/2017 Python 001
+# 07/03/2017 Python 001                                                                                                 # 07/03/2017 Python 001
 print("Hello World.")
 
-'''笔记
-Github and Git
-Push to Github, always create, commit & push local repository to server by Github Client!!!!!!先用GitHub客户端Push一遍之后在PyCharm和其他地方才能正常Push不然无法读取远程Repoitory!!!
+'Six Operators, 六种 Operators'
 
-关于Bitwise和Two's Complement Transformation.
-Two's Complement https://en.wikipedia.org/wiki/Two%27s_complement
-    "The sum of a number and its two's complement will always equal 0 (since the last digit is truncated), and the sum of a number and its one's complement will always equal -0."
 
-理解："In two's-complement representation, positive numbers are simply represented as themselves, and negative numbers are represented by the two's complement of their absolute value."
-二进制直接转化到10进制（把10进制考虑成释义），比如说 011=3， 010=2， 111=7，0111 1111=127，1111 1111=255，是这样，但这样没法表示负数。所以现在无论是几个bit组成的二进制数，都把做左边一个保留来表达正负，0为正，1为负；因为牵扯到0000 0000是0但1111 1111不能是-0只能是-1。比如1111 1111按二进制算原本是255，但现在用1111 1111代表一个负数，这个负数覆盖了255这个原本含义，于是1111 1111从此不再是255了；换算方法就是Two's complement。Two's complement是对“一个负bit数字代表的是哪个负的正数？”这个问题的解释，虽然本身是一种运算，但没有运算的意义，所以不当成运算. 所以叫“Two's-complement representation”而不是“Two's-complement transformation”。具体法则如下：
-     例：0111 1111=127，其two's complement，因为自己是正数，所以就是自己，不需要换算，还是127.
-        ！！！！！！！！！划重点！！！！！！！！！虽然没有意义，但是0111 1111=127也是有Two's-complement transformation的，只不过是把一个正数转换成负数了，-127-1=-128，没有现实意义。
-     例：1000 0000原本(Unsigned Value)是代表130的。现在，two's complement是，对应的0111 1111（每个bit都0，1转换）所代表的正数，即127，的-x-1，即-127-1=-128。于是1000 0000现在不再代表130，而是代表-128。
-     例；1111 1110原本代表254。现在，two's complement是对应的0000 0001所代表的正数1的-x-1，即-1-1=-2。于是1111 1110不再是254，而是-2.
-Two's Complement的优势：
-    0是唯一的，没有+0和-0的冲突。
-    "The sum of a number and its two's complement will always equal 0 (since the last digit is truncated)"例：1111 1111=-1，0000 0001=1；1111 1111 + 0000 0001 = 1 0000 0000，而最左边的1溢出被删了，所以结果剩下0000 0000=0。从含义上来讲（用Two's Complement representation），1(0000 0001) + -1(1111 1111) = 0；从binary原理上来讲，1111 1111 + 0000 0001 = 0000 0000；这样就同时符合了数学运算原理和计算机二进制运算的原理。
-以上
-'''
-
-# Arithmetic Operators                                                                                                   #Arithmetic Operators
+# Arithmetic Operators                                                                                                  # Arithmetic Operators
 num1 = 10
 num2 = 20
 print("Num1 + Num2 =", num1 + num2)
@@ -36,7 +19,7 @@ print("3.8 // 2 =", 3.8 // 2)
 # 注释：‘单引号’，“双引号”在Python里没有区别。
 
 
-# Assignment Operators                                                                                                   #Assignment Operators
+# Assignment Operators                                                                                                  # Assignment Operators
 num3 = num1 + num2
 # print(num3)
 num3 = num3 + num2  # 累加
@@ -45,19 +28,16 @@ num3 += num2  # 相当于上一句，累加
 # print(num3)
 
 
-# Comparison Operator                                                                                                    #Comparison Operator
+# Comparison Operator                                                                                                   # Comparison Operator
 print("Is Num3 > Num2 ?", num3 > num2)
 print("Is Num3 = Num2 ?", num3 == num2)
 print("Is Num3 != Num2 ?", num3 != num2)
 
-'''三个单引号之间的字符全算作注释，比如下面的命令'''  # Comment, 注释写法
 '''
-print("Is Num3 > Num2 ?", num3 > num2)
-print("Is Num3 = Num2 ?", num3 == num2)
-print("Is Num3 != Num2 ?", num3 != num2)
+和“is”以及“is not”，即后面的Identity Operator似乎作用没有区别。
 '''
 
-# Logical Operator                                                                                                       #Logical Operator
+# Logical Operator                                                                                                      # Logical Operator
 x = True
 y = False
 z = True
@@ -87,7 +67,7 @@ Python对and，or和not的判断过程是“从左往右”。比如说：
 以上。
 '''
 
-# Bitwise Operator                                                                                                       #Bitwise Operator
+# Bitwise Operator                                                                                                      # Bitwise Operator
 num4 = 6  # 110
 num5 = 2  # 010
 print('Bitwise and =', num4 & num5)
@@ -131,6 +111,174 @@ This is always equal to -x-1. In Binary, it turns every 1 to 0, and every 0 to 1
     注：此处参考笔记开头Two's Complement Transformation部分标有划重点的部分
 以上。
 '''
-# Identity Operator                                                                                                      #Identity Operator
 
-# Membership Operator                                                                                                    #Membership Operator
+# Identity Operator                                                                                                     # Identity Operator
+'''
+    >>> x = 5
+    >>> x is 5
+    True
+    >>> x is not 5
+    False
+    >>> x = 'gg'
+    >>> x is not 'gg'
+    False
+    >>> x is 'gg'
+    True
+似乎跟前面“==”，“!=”，即Comparison Operator是一个东西，有一样的作用。“==”，“!=”后面也可以连着字符，不一定是数字。
+'''
+
+# Membership Operator                                                                                                   # Membership Operator
+'''
+验证in和not in前面的（数字，字符等）是不是在其后的（list，字符串等）里
+    >>> x = [1,2,3,4,5]
+    >>> 3 in x
+    True
+    >>> 3 not in x
+    False
+    >>> x = 'ghost'
+    >>> 'g' in x
+    True
+    >>> 't' not in x
+    False
+'''
+
+
+
+# 07/06/2017 Python 001                                                                                                 # 07/06/2017 Python 001
+
+
+# Sequence Operations:                                                                                                  # 对各类不同数据的各种操作，有公用的，有面对特定类型数据的。
+
+##########String数据类型##########                                                                                       # 对String类型的data的操作：组合，重复，返回片段，索引，寻找，
+                                                                                                                        # 替换，按特定符号切分成list，数出现次数，换大小写，按字母表找
+                                                                                                                        # 最前最后的字母如a和z，判断是否是英文字母等。
+#公用部分，包括但不限于String类型
+
+## Concatenation
+'Python' + 'Tutorial' #返回'PythonTutorial'。无空格'
+
+## Repetation
+'Python'*2            #返回'PythonPython'。无空格'
+
+## Slicing
+string1 = 'Python'
+string1[2:2] #返回null''
+string1[2:3] #返回't'
+string1[2:4] #返回'th'
+string1[0]   #返回'P'
+
+'''
+研究发现，
+    2:2，2:3，2:4等，可以理解为字符串中字母之间的缝隙，而字符串之前的缝隙是0，如2:3就是yt之间到th之间，所以是t
+    而单个数字，如0，1，2，-1，是把第一个字母P当成第0个，y第一个，一次类推；负数-1代表最后一个n。详细在下面Indexing
+以上
+'''
+
+## Indexing
+string1 = 'Python'
+string1[0]  #返回'P'
+string1[1]  #返回'y'
+string1[-1] #返回'n'
+
+
+# Type Specific Method，只对String类型的数据的
+
+## find()
+str = 'Python'
+str.find('th') #返回2
+
+## replace()
+str = 'Python'
+str.replace('thon','THON') #返回'PyTHON'
+
+## split
+str = 'P, y, t, h, o, n'
+str.split(',') #返回['P', ' y', ' t', ' h', ' o', ' n']，为List
+
+## count
+str = 'Python'
+str.count('Python',0,len(str)) #返回1。len()长度。
+str.count('th',0,5)            #返回1
+str.count('Python',0,-1)       #返回0
+str.count('Pytho',0,-1)        #返回1
+
+## upper()
+str = 'Python'
+str.upper() #返回'PYTHON'。
+
+## max() min()
+str = 'Python'
+max(str) #返回'y'。
+min(str) #返回'P'。
+str = 'Python0,'
+max(str) #返回'y'。
+min(str) #返回','。
+str = 'Python0'
+max(str) #返回'y'。
+min(str) #返回'0'。
+
+'''
+按字母表顺序，min()找排最前的字母，max()找最后面的字母。
+     大写字母靠前，小写字母靠后。数字靠大写字母前面，再前面是乱七八糟符号大概。
+以上。
+'''
+
+##isalpha()
+str='Python'
+str.isalpha() #返回True
+str='Python?'
+str.isalpha() #返回False
+
+'''
+判断是不是全都是字母
+'''
+
+
+##########Tuple(多元组)类型的数据和相关操作##########                                                                       # 对Tuple(多元组)类型的data的介绍，和相关操作：
+                                                                                                                        #
+'''
+顾名思义，多元组是多种不同Immutable类型变量的组合。其不可modify，比较于list的中括号[,,,]，Tuple用小括号(,,,)。
+“A Tuple is a sequenceof immutable Python objects like floating number, string literals, etc.”
+“The tuples can't be changed, unlike lists.”
+“Tuples are defined using curve braces.”
+'''
+
+myTuple = ('Yukiho', 2.4, 5, 'Python')
+print(myTuple)  # 返回('Yukiho', 2.4, 5, 'Python')
+
+#公用部分
+
+## Concatenation
+tup = ('a','b','c')
+tup + ('d','e')     #返回('a', 'b', 'c', 'd', 'e')
+
+## Repettion
+tup = ('a','b','c')
+tup * 2     #返回('a', 'b', 'c', 'a', 'b', 'c')
+
+## Slicing
+tup = ('a','b','c')
+tup[1:2]     #返回('b',)，没错总有至少一个逗号
+tup[1:3]     #返回('b', 'c')
+tup[0:3]     #返回('a', 'b', 'c')
+
+##Indexing
+tup = ('a','b','c')
+tup[0]     #返回'a'，没错，没括号了，不是Tuple了，剩下一个string了。
+
+'''
+其他特别部分省略了
+'''
+
+
+##########Lists类型的数据和相关操作##########
+
+'''
+和Tuple相对的存在，是多种不同utable类型变量的组合。其不可modify，比较于list的中括号[,,,]，Tuple用小括号(,,,)。
+“A List is a sequenceof immutable Python objects like floating number, string literals, etc.”
+“Lists can be modified.”
+“用中括号[]”
+'''
+
+myList = ['Yukiho', 2.4, 5, 'Python']
+print(myList)  # 返回['Yukiho', 2.4, 5, 'Python']

@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fd7dccd-fa8f-4073-9cc6-28399752998a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/AUTHORS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/COPYING" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/ChangeLog" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/LINKS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/README" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/SDL.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/SDL_mixer.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/data/jumpbump.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/gob.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/gobpack.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/jnbpack.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/jnbunpack.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/jump-2xscr.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/jump-fullscr.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/jumpnbump.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/jumpnbump.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/levelmaking/jumpnbump_levelmaking.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/levelmaking/level.pcx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/levelmaking/making1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/levelmaking/making2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/levelmaking/making3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/levelmaking/pack.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/readme-win32.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/smpeg.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jump_n_bump/stdout.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/draft.py" afterPath="$PROJECT_DIR$/draft.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,8 +19,18 @@
       <file leaf-file-name="draft.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/draft.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="641">
-              <caret line="118" column="18" lean-forward="false" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+            <state relative-caret-position="740">
+              <caret line="283" column="47" lean-forward="false" selection-start-line="283" selection-start-column="47" selection-end-line="283" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Notes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Notes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="872">
+              <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -59,6 +45,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Notes.py" />
         <option value="$PROJECT_DIR$/draft.py" />
       </list>
     </option>
@@ -124,6 +111,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Munan Hou\OneDrive\Documents\Python\Study" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -256,7 +250,21 @@
       <option name="project" value="LOCAL" />
       <updated>1499369733919</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="removing extra files">
+      <created>1499369889061</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1499369889061</updated>
+    </task>
+    <task id="LOCAL-00008" summary="notes saving">
+      <created>1499371070568</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1499371070568</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -264,9 +272,9 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10989426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941943" sideWeight="0.50453174" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941943" sideWeight="0.4954683" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941943" sideWeight="0.7439577" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941943" sideWeight="0.50755286" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941943" sideWeight="0.49244714" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941943" sideWeight="0.73716015" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -290,7 +298,9 @@
     <MESSAGE value="Test" />
     <MESSAGE value="July 5, 2017 Notes. Understanding Two's Complementary Representation. -x-1." />
     <MESSAGE value="Have fun!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Have fun!" />
+    <MESSAGE value="removing extra files" />
+    <MESSAGE value="notes saving" />
+    <option name="LAST_COMMIT_MESSAGE" value="notes saving" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -313,10 +323,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/YUKIHO/jumpnbump-nacl-master/jumpnbump-nacl-master/httpd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="872">
+          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/draft.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="118" column="18" lean-forward="false" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+        <state relative-caret-position="740">
+          <caret line="283" column="47" lean-forward="false" selection-start-line="283" selection-start-column="47" selection-end-line="283" selection-end-column="47" />
           <folding />
         </state>
       </provider>
