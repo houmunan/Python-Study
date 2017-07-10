@@ -3,6 +3,9 @@ print("Hello World.")
 
 '''笔记
 
+视频地址：
+https://www.youtube.com/watch?v=N0lxfilGfak
+
 三个单引号之间的字符全算作注释。和#一样的注释写法。单引号之间句尾加/n似乎也是注释写法。就算句尾无/n也是注释，但当点击回车换行的时候，格式会不一样。
 
 Github and Git
